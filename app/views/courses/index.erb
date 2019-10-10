@@ -1,1 +1,6 @@
-<%erb :layout%>
+<% @courses.each do |course| %>
+<h1><a href="/courses/<%=course.id%>"><%=course.name%></a> </h1>
+<h1><%=course.professor%></h1>
+<h1><%=course.credits%></h1>
+<br>
+<%end%>
